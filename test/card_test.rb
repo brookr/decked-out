@@ -5,7 +5,7 @@ describe "A single Card" do
   it "has a suit and a value" do
     card = Card.new(1, "S") # Ace of Spades
 
-    card.value.must_be :==, 1
-    card.suit.must_be :==, "S"
+    card.value.must_equal 1
+    card.suit.must_equal "S"
   end
 end
